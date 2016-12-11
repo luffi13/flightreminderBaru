@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#" data-toggle="modal" data-target="#myModal">Log In</a></li>
-        <li><a href="<?php echo site_url('web/signup')?>">Sign Up</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModalsign">Sign Up</a></li>
       </ul>
   </div>
   </div>
