@@ -1,0 +1,156 @@
+#signup, #login, #pergi{
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 85%;
+    left: 55%;
+}
+
+#pergi2 {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 85%;
+    left: 32%;
+}
+
+#pulang {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 85%;
+    left: 70%;
+}
+
+#signup p, #login p, #pergi p, #pergi2 p, #pulang p {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+#tombol{
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 150%;
+    left: 55%;
+}
+
+#tombol2{
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 270%;
+    left: 10%;
+}
+
+#button{
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 41%;
+    left: 100%;
+}
+
+#notifpulang {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 155%;
+    left: 27.8%;
+}
+
+#notifpergi h3, #notifpulang h3, #jampergi h3, #jampulang h3, #jamcheckinpergi h3, #jamcheckinpulang h3 {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+}
+
+#jamcheckinpergi {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: -100px 0 0 -200px;
+    top: 94.5%;
+    left: 80%;
+}
+
+#jampulang {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: -100px 0 0 -200px;
+    top: 155%;
+    left: 57%;
+}
+
+#jamcheckinpulang {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: -100px 0 0 -200px;
+    top: 155%;
+    left: 80%;
+}
+
+#jam {
+    background-color: #00c0ff;
+    width: 267px;
+    height: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 500%;
+    color: white;
+}
+
+#jam p {
+    padding-top: 38px;
+    padding-left: 10px;
+}
+
+#terimakasih {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 85%;
+    left: 50%;
+}
+
+#tombol3 {
+    position: absolute;
+    height: 100px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 160%;
+    left: 0%;
+}
+
+#tombol5 {
+    position: absolute;
+    height: 100px;
+    width: 500px;
+    margin: -100px 0 0 -200px;
+    top: 130%;
+    left: 23%;
+}
+
+#tombol4 {
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 155%;
+    left: 110%;
+}
+
+#ingat2 {
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 125%;
+    left: 90%;
+}
+
+#ingat3 {
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 190%;
+    left: 90%;
+}
