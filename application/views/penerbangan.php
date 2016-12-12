@@ -24,23 +24,10 @@
 
 
 <body>
-  <div class="main">
-    <div id="banner">
-      <br><br><br>
-      <div class="text1"> 
-        Selamat<span>Datang</span>
-        <?php 
-        if (!isset($username)) {
-        # code...
-        redirect('home', 'refresh');
-      }
-        echo $username?>
-      </div>
-    </div>
-  </div>
-  <h1>Penerbangan</h1><br></br>
-<section id="content">
-
+  
+  
+<section id="penerbangan">
+<h1>Penerbangan</h1><br></br>
 
 <div class="row">
       <div class="col-md-6">
@@ -66,7 +53,7 @@
               <input type="hidden" class="input input1" name="username" value="<?php echo $username; ?>">
             </div>
           <br>
-          <button type="submit" class="button2">Selanjutnya</button>
+          <button type="submit" class="btn btn-default btn-lg">Selanjutnya</button>
 
           </form>
         </div>
@@ -81,17 +68,17 @@
           <form id="form_2" action="<?php echo site_url('penerbangan/pulangpergi')?>" method="POST">
            <div class="form-group">
             <label >Kode Pesawat Pergi:</label>
-            <input type="text" class="form-control" name="kodepergi"  id="kodepesawat" placeholder="Kode Pesawat Pergi"required>
+            <input type="text" class="form-control" name="kodepergi"  id="kodepesawat" placeholder="Kode Pesawat Pergi" required>
           </div>
 
           <div class="form-group">
             <label  >Tanggal Pergi:</label>
-            <input type="date" class="form-control" name="tanggalpergi" placeholder="YYYY/MM/DD"required>
+            <input type="date" class="form-control" name="tanggalpergi" placeholder="YYYY/MM/DD" required>
           </div>
 
           <div class="form-group">
             <label >Kode Pesawat Pulang:</label>
-            <input type="text"  class="form-control" name="kodepulang" id="kodepesawat" placeholder="Kode Pesawat Pulang"required>
+            <input type="text"  class="form-control" name="kodepulang" id="kodepesawat" placeholder="Kode Pesawat Pulang" required>
           </div>
 
           <div class="form-group">
@@ -105,7 +92,7 @@
           </div>
      
            <br>
-           <button type="submit" class="button2">Selanjutnya</button>
+           <button type="submit" class="btn btn-default btn-lg">Selanjutnya</button>
 
      
           </form>

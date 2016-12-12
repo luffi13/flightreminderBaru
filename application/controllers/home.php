@@ -17,7 +17,11 @@ class Home extends CI_Controller {
     //menambahkan auto complete
      $session_data = $this->session->userdata('logged_in');
      $data['username'] = $session_data['username'];
-     $this->load->view('template/header_login');
+     
+        $this->load->view('/New_Template/header');
+        $this->load->view('/New_Template/navbar_logged_in');
+        // $this->load->view('/New_Template/jaeger');
+        $this->load->view('/New_Template/banner');          
      $this->load->view('penerbangan', $data);
    }
    else if($this->session->userdata('logged_in_admin'))
