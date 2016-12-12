@@ -25,7 +25,7 @@
           
         </div>
         <div class="row text-center">
-          <form method="POST">
+          <form method="POST" action="<?php echo site_url('ubahjam'); ?>">
             <?php foreach ($notifikasi as $row) { ?>
             <input type="hidden" name="nomornotifikasi" value="<?php echo $row->NomorNotifikasi; ?>" />
             <input type="hidden" name="jamberangkat" value="<?php echo $row->JamBerangkat; ?>" />
