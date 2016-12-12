@@ -23,6 +23,7 @@ class ControlNotifikasi extends CI_Controller {
             // $this->load->view('/New_Template/jaeger');
             $this->load->view('/New_Template/banner');  
             $this->load->view('/New_Template/halaman_notifikasi_pp',$data);
+            $this->load->view('/New_Template/script');
         }
         else
             echo "gagal";

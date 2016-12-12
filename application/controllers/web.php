@@ -11,6 +11,7 @@ class Web extends CI_Controller {
  	public function newIndex(){
 
  		$this->load->view('/New_Template/header');
+
  		$this->load->view('/New_Template/index_page');
  	}
 
@@ -21,7 +22,10 @@ class Web extends CI_Controller {
       
             $post_array = $this->session->userdata('logged_in');
             
-            $this->load->view('template/header_login');              
+        $this->load->view('/New_Template/header');
+        $this->load->view('/New_Template/navbar_logged_in');
+        // $this->load->view('/New_Template/jaeger');
+        $this->load->view('/New_Template/banner');             
             $this->load->view('penerbangan');  
               
            	
@@ -33,6 +37,10 @@ class Web extends CI_Controller {
         else
         {
         	$this->load->view('/New_Template/header');
+ 		$this->load->view('/New_Template/navbar');
+        // $this->load->view('/New_Template/jaeger');
+        // $this->load->view('/New_Template/banner');             
+        
  			$this->load->view('/New_Template/index_page');
         }
 
