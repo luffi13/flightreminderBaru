@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!-- 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -81,8 +81,55 @@
 <div class="main">
   <div id="banner">
     <br><br><br>
-    <div class="text1"> Selamat<span>Datang</span></div>      
+   
   </div>
-</div>
+</div> -->
+<!-- 
+
+<header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Simple, One Page Design</h1>
+                <h4>Selamat Datang</h4>
+                <hr>
+                <div class="col-lg-6 col-centered " ></div>
+                <div class="col-lg-6 col-centered " >
+                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-xl">Log In</a>
+                <a href="#" data-toggle="modal" data-target="#myModalsign" class="btn btn-primary btn-xl">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+</header> -->
+<body background="includes/images/intro-bg.jpg">
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Selamat Datang</h1>
+                        <h3>Flight Reminder Menu</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
 </body>
+  
 </html>

@@ -5,7 +5,16 @@
 <link rel="stylesheet" href="<?php echo base_url();?>includes/css/bikin.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php echo base_url();?>includes/css/bootstrap.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php echo base_url();?>includes/css/tabs.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="<?php echo base_url();?>includes/css/ionicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="<?php echo base_url();?>includes/css/animate.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="<?php echo base_url();?>includes/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" href="<?php echo base_url();?>includes/css/bootstrap.min.css" type="text/css" media="all">
+<script type="text/javascript" src="<?php echo base_url();?>includes/js/bootstrap" ></script>
+<script type="text/javascript" src="<?php echo base_url();?>includes/js/bootstrap.min" ></script>
+<script type="text/javascript" src="<?php echo base_url();?>includes/js/html5" ></script>
 <script type="text/javascript" src="<?php echo base_url();?>includes/js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="<?php echo base_url();?>includes/js/jquery.js" ></script>
 <script type="text/javascript" src="<?php echo base_url();?>includes/js/cufon-yui.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>includes/js/cufon-replace.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>includes/js/Myriad_Pro_italic_600.font.js"></script>

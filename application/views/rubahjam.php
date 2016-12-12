@@ -16,12 +16,14 @@
       <div class="wrapper">
         <p>Jam Berangkat Lama: <?php echo $jamberangkat ?></p> 
       </div>
-      <div class="wrapper">
-        <p>Jam Berangkat Baru:</p> 
-        <div class="bg">
-          <input type="time" class="input input1" name="jamberangkat" placeholder="HH:MM:SS">
-        </div>
+
+      
+      <div class="form-group">
+            <p>Jam Berangkat Baru:</p>
+            <input type="time" class="form-control"  name="jamberangkat" placeholder="HH:MM:SS"required>
       </div>
+
+
       <input type="hidden" name="nomornotifikasi" value="<?php echo $pergi; ?>" />
       <div class="wrapper">
         <br>
