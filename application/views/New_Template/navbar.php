@@ -1,8 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+					<li><a href="#" data-toggle="modal" data-target="#myLogIn" id="myModal">LOGIN</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#mySignUp">SIGN UP</a></li>
 
-<!-- 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+	</div>
+
+</div>
+</header>
+
+<div class="modal fade" id="myLogIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -34,7 +44,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="myModalsign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -77,56 +87,3 @@
     </div>
   </div>
 </div>
-
-<div class="main">
-  <div id="banner">
-    <br><br><br>
-   
-  </div>
-</div> -->
-<!-- 
-
-<header id="first">
-        <div class="header-content">
-            <div class="inner">
-                <h1 class="cursive">Simple, One Page Design</h1>
-                <h4>Selamat Datang</h4>
-                <hr>
-                <div class="col-lg-6 col-centered " ></div>
-                <div class="col-lg-6 col-centered " >
-                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-xl">Log In</a>
-                <a href="#" data-toggle="modal" data-target="#myModalsign" class="btn btn-primary btn-xl">Sign Up</a>
-                </div>
-            </div>
-        </div>
-
-</header> -->
-<body background="<?php echo base_url();?>includes/images/intro-bg.jpg">
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="intro-message">
-                        <h1>Selamat Datang</h1>
-                        <h3>Flight Reminder Menu</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#myLogIn" id="myModal" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">LOGIN</span></a>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#mySignUp" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">SIGN UP</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-</body>
-  
-</html>
