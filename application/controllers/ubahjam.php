@@ -20,13 +20,9 @@ class UbahJam extends CI_Controller {
 
             $this->load->view('/New_Template/header');
             $this->load->view('/New_Template/navbar_logged_in');
-            // $this->load->view('/New_Template/jaeger');
-
             $this->load->view('/New_Template/banner');  
-
-            $this->load->view('/New_Template/ubah_jam_pp',$data);  
-        
-            $this->load->view('/New_Template/script');  
+            $this->load->view('/New_Template/ubah_jam_pp',$data);
+            $this->load->view('/New_Template/script');
         }
         else
             echo "gagal";
@@ -41,17 +37,8 @@ class UbahJam extends CI_Controller {
 
         if($data)
         {
-
-            $this->load->view('/New_Template/header');
-            $this->load->view('/New_Template/navbar_logged_in');
-            // $this->load->view('/New_Template/jaeger');
-
-            $this->load->view('/New_Template/banner');  
-
-            $this->load->view('/New_Template/ubah_jam_pp',$data);  
-
-            $this->load->view('/New_Template/script');  
-            // $this->load->view('rubahjampp',$data);
+            $this->load->view('template/header_login');  
+            $this->load->view('rubahjampp',$data);
         }
         else
             echo "gagal";

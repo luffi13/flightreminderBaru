@@ -22,7 +22,7 @@ class Home extends CI_Controller {
         $this->load->view('/New_Template/navbar_logged_in');
         // $this->load->view('/New_Template/jaeger');
         $this->load->view('/New_Template/banner');          
-     $this->load->view('penerbangan', $data);
+        $this->load->view('penerbangan', $data);
    }
    else if($this->session->userdata('logged_in_admin'))
    {

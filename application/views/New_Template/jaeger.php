@@ -1,5 +1,5 @@
 
-<div class="" >
+<!-- <div class="" >
   <div class="carousel-inner">
     <div class="item active">
       <img class="img-responsive img-center my-img" id="my-img" src="<?php echo base_url('includes/images/bg_img.jpg'); ?>">
@@ -8,7 +8,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- <section id="penerbangan">
   <div class="container">
     <div class="row">

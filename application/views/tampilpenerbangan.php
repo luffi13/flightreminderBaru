@@ -10,7 +10,8 @@
   </div>
 </div>
   
-  <div >
+  <section id="penerbangan">
+  <div class="" >
     <h2 style="text-align: center;">Detail Penerbangan</h2>
     <div class="row">
     <div class="col-lg-4 col-centered " ></div>
@@ -43,12 +44,14 @@
   </div>
 
 
-<div>
+<div class="text-center">
   
   <form  action="<?php echo site_url('controlnotifikasi/pergi')?>" method="POST">
     <input type="hidden" name="nomornotifikasipergi" value="<?php echo $nomor; ?>">
-    <button  class="button2" type="submit">Selanjutnya</button>
+    <button  class="btn btn-default btn-lg " type="submit">Selanjutnya</button>
   </form>
-</div>
+</div>    
+  </section>
+
 </body>
 </html>
