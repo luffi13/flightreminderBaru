@@ -1,6 +1,7 @@
 
         				<li><a href="<?php echo site_url('home')?>">HOME</a></li>
-        				<li><a href="<?php echo site_url('web/logout')?>">Log Out</a>
+        				<li><a href="<?php echo site_url('home/showNotif')?>">NOTIFIKASI</a></li>
+        				<li><a href="<?php echo site_url('web/logout')?>">LOG OUT</a>
 
 					</ul>
 				</div>

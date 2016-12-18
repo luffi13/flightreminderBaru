@@ -21,11 +21,16 @@ class Mengelolanotifikasi extends CI_Controller {
 			if($data['notifikasi'])
 			{
 				$session_data = $this->session->userdata('logged_in_admin');
+				// var_dump($session_data);
+				if (is_null($session_data )) {
+					redirect('home/showNotif');
+					# code...
+				}else {
      			$data2['username'] = $session_data['username'];
-				
 				$this->load->view('/template/header_admin', $data2);
 				$this->load->view('daftar_notifikasi', $data);	
-				$this->load->view('/template/footer_admin');
+				$this->load->view('/template/footer_admin');	
+				}
 			}
 	}
 }

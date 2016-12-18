@@ -17,7 +17,7 @@
 
             <form id="form_2" action="<?php echo site_url('ubahjam/ubah')?>" method="POST">
               <div class="form-control-wrapper">
-                <input type="text" id="time" class="form-control floating-label" placeholder="Time">
+                <input type="text" id="time" name="jamberangkat" class="form-control floating-label" placeholder="Time">
                 <input type="hidden" name="nomornotifikasi" value="<?php echo $pergi; ?>" />
               </div>
               <div>

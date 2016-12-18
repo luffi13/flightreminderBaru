@@ -1,6 +1,6 @@
-					<li><a href="#" data-toggle="modal" data-target="#myLogIn" id="myModal">LOGIN</a></li>
+<!-- 					<li><a href="#" data-toggle="modal" data-target="#myLogIn" id="myModal">LOGIN</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#mySignUp">SIGN UP</a></li>
-
+ -->
 					</ul>
 				</div>
 				<!--/.nav-collapse -->

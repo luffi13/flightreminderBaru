@@ -70,8 +70,14 @@ class UbahJam extends CI_Controller {
 
         if($data2['notifikasi'])
         {
-            $this->load->view('template/header_login');  
-            $this->load->view('halaman_notifikasi',$data2);
+            $this->load->view('/New_Template/header');
+            $this->load->view('/New_Template/navbar_logged_in');
+            // $this->load->view('/New_Template/jaeger');
+            $this->load->view('/New_Template/banner');  
+            $this->load->view('/New_Template/halaman_notifikasi_pp',$data2);
+            $this->load->view('/New_Template/script');
+            // $this->load->view('template/header_login');  
+            // $this->load->view('halaman_notifikasi',$data2);
         }
         else
             echo "gagal";

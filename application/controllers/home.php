@@ -8,6 +8,7 @@ class Home extends CI_Controller {
  {
    parent::__construct();
    $this->load->model('daftarpenerbangan');
+       $this->load->model('daftarnotifikasi');
  }
  
  function index()
@@ -28,6 +29,36 @@ class Home extends CI_Controller {
    {
      redirect('admin');
     
+   }
+   else
+   {
+     //If no session, redirect to login page
+     redirect('web', 'refresh');
+    
+   }
+ }
+
+ function showNotif(){
+
+   if($this->session->userdata('logged_in'))
+   {
+    //menambahkan auto complete
+     $session_data = $this->session->userdata('logged_in');
+     $data['username'] = $session_data['username'];
+     // var_dump($data);
+     $data2['notifikasi'] = $this->daftarnotifikasi->daftar_notif_user($data['username']);
+     
+        $this->load->view('/New_Template/header');
+        $this->load->view('/New_Template/navbar_logged_in');
+        if($data2['notifikasi'])
+        {
+          // $this->load->view('/template/header_admin',$data);\
+            $this->load->view('/New_Template/list_notification', $data2); 
+          // $this->load->view('/template/footer_admin');
+        } 
+        // $this->load->view('/New_Template/jaeger');
+        // $this->load->view('/New_Template/banner');          
+        // $this->load->view('penerbangan', $data);
    }
    else
    {

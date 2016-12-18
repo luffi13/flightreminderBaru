@@ -48,7 +48,7 @@
   
   <form  action="<?php echo site_url('controlnotifikasi/pergi')?>" method="POST">
     <input type="hidden" name="nomornotifikasipergi" value="<?php echo $nomor; ?>">
-    <button  class="btn btn-default btn-lg " type="submit">Selanjutnya</button>
+    <button  class="btn btn-default btn-lg btn-primary " type="submit">Selanjutnya</button>
   </form>
 </div>    
   </section>
