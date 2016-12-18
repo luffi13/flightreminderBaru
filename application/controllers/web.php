@@ -75,9 +75,10 @@ class Web extends CI_Controller {
             'username' => $this->input->post('username'),
             'email' => $this->input->post('email'),
             'password' => $this->input->post('password'),
+            'noTelp' => $this->input->post('noTelp'),
             );
              
-            $data['akun'] = $this->signup->signup_akun($data['nama'],$data['username'],$data['email'],$data['password']);
+            $data['akun'] = $this->signup->signup_akun($data['nama'],$data['username'],$data['email'],$data['password'],$data['noTelp']);
 
             $username = $this->input->post('username');
   			$password = $this->input->post('password');
@@ -97,8 +98,12 @@ class Web extends CI_Controller {
 			     }
 			     $session_data = $this->session->userdata('logged_in');
 			     $data['username'] = $session_data['username'];
-			     $this->load->view('template/header_login');
-			     $this->load->view('penerbangan', $data);
+			     
+        $this->load->view('/New_Template/header');
+        $this->load->view('/New_Template/navbar_logged_in');
+        // $this->load->view('/New_Template/jaeger');
+        $this->load->view('/New_Template/banner');          
+        $this->load->view('penerbangan', $data);
 			   }
     }
 

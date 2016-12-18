@@ -1,5 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+
 class Email extends CI_Controller {
+  function __construct()
+    {
+       parent::__construct();
+       $this->load->model('daftarpengguna');
+
+     }
+
+
 	function index()
 	{
 		$email = $this->input->post('email');
@@ -144,5 +154,24 @@ class Email extends CI_Controller {
     {
       show_error($this->email->print_debugger());
     }
+  }
+
+  function smsGateway(){
+
+    $email = $this->input->post('email');
+    $nomornotifikasi = $this->input->post('nomornotifikasi');
+    $kodepesawat = $this->input->post('kodepesawat');
+    $jamberangkat = $this->input->post('jamberangkat');
+    $jamcheckin = $this->input->post('jamcheckin');
+
+    $result = $this->daftarpengguna->getUser('andrezacharyreinaldi@gmail.com');
+    $noTelp= $result[0]->noTelp ;
+    $nama = $result[0]->nama;
+   $service_url ='http://localhost/sms/sendApi.php?tujuan='.$noTelp.'&nama='. urlencode($nama).'&penerbangan='.$kodepesawat.'&waktu='.$jamcheckin;
+   echo $service_url;
+  $curl = curl_init($service_url);
+ $curl_response = curl_exec($curl);
+  redirect('home');
+    // http://localhost/sms/sendApi.php?tujuan=+6281249553383&nama=luffi&penerbangan=GA303&maskapai=garuda&waktu=19.30
   }	
 }?>

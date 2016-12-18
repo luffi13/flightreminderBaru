@@ -39,6 +39,11 @@ class Penerbangan extends CI_Controller {
         $tanggal = $this->input->post('tanggalpergi');
         $username = $this->input->post('username');
         $jam = $this->Kode->jam($pergi);
+        //echo $jam;
+        if($jam=='0'){
+            redirect('home');
+            return;
+        }
 
         if(!$jam)
         {
@@ -61,9 +66,9 @@ class Penerbangan extends CI_Controller {
         if($data['penerbangan'])
         {
             $this->load->view('/New_Template/header');
-        $this->load->view('/New_Template/navbar_logged_in');
-        // $this->load->view('/New_Template/jaeger');
-        $this->load->view('/New_Template/banner');         
+            $this->load->view('/New_Template/navbar_logged_in');
+            // $this->load->view('/New_Template/jaeger');
+            $this->load->view('/New_Template/banner');         
             $this->load->view('tampilpenerbangan',$data);
             //$this->load->view('selanjutnya', $nomor);
         }   

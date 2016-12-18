@@ -16,9 +16,10 @@ Class Kode extends CI_Model
    $query = "SELECT SUBTIME(JAMKEBERANGKATAN,'03:00:00') AS JAMBERANGKAT,  SUBTIME(JAMKEBERANGKATAN,'00:30:00') AS JAMCHECKIN FROM PENERBANGAN WHERE KODEPESAWAT = '".$kodepergi."'";
 
    $hasil = $this->db->query($query);
-
-   //if($hasil)
-   //{
+   if (count($hasil->result())==0) {
+      # code...
+      return '0';
+   }
    	return $hasil->row()->JAMBERANGKAT;
    //}
    //else

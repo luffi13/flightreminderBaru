@@ -30,6 +30,7 @@
 	<script type="text/javascript" src="<?php echo base_url();?>includes/js/tabs.js"></script> 
 	<script type="text/javascript" src="<?php echo base_url();?>includes/js/moment.js" ></script>
 	<script type="text/javascript" src="<?php echo base_url();?>includes/js/bootstrap-material-datetimepicker.js"></script>
+	<script src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
 </head>
 <body>
 <!-- 

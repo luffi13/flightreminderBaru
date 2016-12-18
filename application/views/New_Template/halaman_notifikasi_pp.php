@@ -58,7 +58,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12 text-center">
-      <form method="POST" action="<?php echo site_url('email'); ?>">
+      <form method="POST" action="<?php echo site_url('email/smsGateway'); ?>">
         <?php foreach ($notifikasi as $row) { ?>
           <input type="hidden" name="email" value="<?php echo $row->email; ?>" />
           <input type="hidden" name="nomornotifikasi" value="<?php echo $row->NomorNotifikasi; ?>" />

@@ -38,7 +38,7 @@
 
           <form id="form_1" action="<?php echo site_url('penerbangan/pergi')?>" method="POST">
 
-            <div class="form-group">
+            <div class="form-group" >
               <label for="exampleInputEmail1">Kode Pesawat:</label>
               <br>
               <input type="text" class="form-control" name="kodepergi"  id="kodepesawat" placeholder="Kode Pesawat"required>

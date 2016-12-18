@@ -15,7 +15,7 @@
           <div class="col-md-6  text-center">
             <h4>Jam Notifikasi Baru</h4>
 
-            <form id="form_2" action="<?php echo site_url('ubahjam/ubah_pp2')?>" method="POST">
+            <form id="form_2" action="<?php echo site_url('ubahjam/ubah')?>" method="POST">
               <div class="form-control-wrapper">
                 <input type="text" id="time" class="form-control floating-label" placeholder="Time">
                 <input type="hidden" name="nomornotifikasi" value="<?php echo $pergi; ?>" />

@@ -58,22 +58,27 @@
 
           <div class="form-group">
             <label>Name:</label>
-            <input type="text" class="form-control"  name="nama" placeholder="Masukkan Nama"required>
+            <input type="text" class="form-control"  name="nama" placeholder="Masukkan Nama" required>
           </div>
 
           <div class="form-group">
             <label>Username:</label>
-            <input type="text" class="form-control"  name="username" placeholder="Masukkan Username"required>
+            <input type="text" class="form-control"  name="username" placeholder="Masukkan Username" required>
           </div>
 
           <div class="form-group">
             <label>Email:</label>
-            <input type="text" class="form-control"  name="email" placeholder="Masukkan Email"required>
+            <input type="text" class="form-control"  name="email" placeholder="Masukkan Email" required>
           </div>
 
           <div class="form-group">
             <label>Password:</label>
-            <input type="password" class="form-control"  name="password" placeholder="Masukkan Password"required>
+            <input type="password" class="form-control"  name="password" placeholder="Masukkan Password" required>
+          </div>
+
+          <div class="form-group">
+            <label>No Telp</label>
+            <input type="text" class="form-control"  name="noTelp" placeholder="Masukkan NoTelp" required>
           </div>
 
           <div class="modal-footer">
