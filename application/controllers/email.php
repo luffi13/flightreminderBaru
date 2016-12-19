@@ -168,7 +168,7 @@ class Email extends CI_Controller {
     $noTelp= $result[0]->noTelp ;
     $nama = $result[0]->nama;
    $service_url ='http://localhost/sms/sendApi.php?tujuan='.$noTelp.'&nama='. urlencode($nama).'&penerbangan='.$kodepesawat.'&waktu='.$jamcheckin;
-   echo $service_url;
+   //echo $service_url;
   $curl = curl_init($service_url);
  $curl_response = curl_exec($curl);
   redirect('home');
