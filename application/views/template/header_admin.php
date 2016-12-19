@@ -39,6 +39,9 @@
                         <li>
                             <a href="<?php echo site_url('admin/notifikasi')?>"><i class="fa fa-envelope fa-fw"></i> Notifikasi</a>
                         </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/broadcast')?>"><i class="fa fa-comment fa-fw"></i> Broadcast delay</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -10,11 +10,11 @@ class Email extends CI_Controller {
      }
 
 
-	function index()
-	{
-		$email = $this->input->post('email');
-		$nomornotifikasi = $this->input->post('nomornotifikasi');
-		$kodepesawat = $this->input->post('kodepesawat');
+  function index()
+  {
+    $email = $this->input->post('email');
+    $nomornotifikasi = $this->input->post('nomornotifikasi');
+    $kodepesawat = $this->input->post('kodepesawat');
     $jamberangkat = $this->input->post('jamberangkat');
     $jamcheckin = $this->input->post('jamcheckin');
 
@@ -80,7 +80,7 @@ class Email extends CI_Controller {
     {
       show_error($this->email->print_debugger());
     }
-	}
+  }
 
   function index_pp()
   {
@@ -168,10 +168,10 @@ class Email extends CI_Controller {
     $noTelp= $result[0]->noTelp ;
     $nama = $result[0]->nama;
    $service_url ='http://localhost/sms/sendApi.php?tujuan='.$noTelp.'&nama='. urlencode($nama).'&penerbangan='.$kodepesawat.'&waktu='.$jamcheckin;
-   echo $service_url;
+   //echo $service_url;
   $curl = curl_init($service_url);
  $curl_response = curl_exec($curl);
   redirect('home');
     // http://localhost/sms/sendApi.php?tujuan=+6281249553383&nama=luffi&penerbangan=GA303&maskapai=garuda&waktu=19.30
-  }	
+  } 
 }?>
